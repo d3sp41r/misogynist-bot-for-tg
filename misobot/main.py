@@ -12,7 +12,7 @@ dp=Dispatcher(bot)
 @dp.message_handler(commands=['women'])
 async def send_message(message: types.Message):
     media = types.MediaGroup()
-    media.attach_video('CgACAgQAAx0CUMx1MQABApuJYrUhEeaDvenC2KhlnHWyQ-0w2d0AAhQDAAJgTLVSTjSefpf73VApBA')
+    media.attach_video('CgACAgQAAx0CSL8EywABAe6XYrWqc4eVSQcrpjiA2PzP--rXHwUAAhQDAAJgTLVSmKVerjkQLTUpBA')
     await message.reply_media_group(media=media)
 
 @dp.message_handler(commands=['msg_id'])
