@@ -18,7 +18,18 @@ async def send_message(message: types.Message):
 @dp.message_handler(commands=['msg_id'])
 async def send_message(message: types.Message):
     await message.reply(message.message_id)
+    
+@dp.message_handler(commands=['men'])
+async def send_message(message: types.Message):
+    media = types.MediaGroup()
+    media.attach_video('CgACAgQAAx0CUMx1MQABAqUSYrniZhVtxCS4wp68TFsO5NLlQUYAAtwJAAIP9LhTBzfa89_SY6ApBA')
+    await message.reply_media_group(media=media)
 
+@dp.message_handler(commands=['cuh'])
+async def send_message(message: types.Message):
+    media = types.MediaGroup()
+    media.attach_video('CgACAgIAAx0CUMx1MQABAqUVYrnicHKOooq9WkdEU67VSawAAfSeAALAEgACXrUpSaspZPKqOqa_KQQ')
+    await message.reply_media_group(media=media)
 
 
 if __name__ == '__main__':
