@@ -30,6 +30,12 @@ async def send_message(message: types.Message):
     media = types.MediaGroup()
     media.attach_video('CgACAgIAAx0CUMx1MQABAqUVYrnicHKOooq9WkdEU67VSawAAfSeAALAEgACXrUpSaspZPKqOqa_KQQ')
     await message.reply_media_group(media=media)
+    
+@dp.message_handler(commands=['voices'])
+async def send_message(message: types.Message):
+    media = types.MediaGroup()
+    media.attach_video('CgACAgQAAx0CSL8EywABA4eqY2xdKt2JsCw0OuXLEbw6rTTNWIgAAv4DAALS811SayYWwSvwyyMrBA')
+    await message.reply_media_group(media=media)
 
 
 if __name__ == '__main__':
