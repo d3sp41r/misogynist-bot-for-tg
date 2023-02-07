@@ -28,7 +28,7 @@ async def send_message(message: types.Message):
 @dp.message_handler(commands=['cuh'])
 async def send_message(message: types.Message):
     media = types.MediaGroup()
-    media.attach_video('CgACAgIAAx0CUMx1MQABAqUVYrnicHKOooq9WkdEU67VSawAAfSeAALAEgACXrUpSaspZPKqOqa_KQQ')
+    media.attach_video('CgACAgIAAx0CVy_pRAABARC0Y-LdkriLIMnXcVQiddLPO4SnpAkAAhcnAAI61hlL0wQEHPMCKkQuBA')
     await message.reply_media_group(media=media)
     
 @dp.message_handler(commands=['voices'])
